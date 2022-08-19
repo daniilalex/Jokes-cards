@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=DynaPuff&family=Inter&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: DynaPuff;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  min-width: 600px;
+
+  .mainKeys {
+    margin: 40px auto;
+    #add,
+    #clear {
+      background-color: #4d8a56;
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      padding: 15px;
+      min-height: 30px;
+      min-width: 120px;
+    }
+    #add:hover {
+      background-color: #993864;
+      transition: 0.7s;
+    }
+    #clear:hover {
+      background-color: #002ead;
+      transition: 0.7s;
+    }
+    #add:focus {
+      outline-color: transparent;
+      outline-style: solid;
+      box-shadow: 0 0 0 4px #8ea701;
+      transition: 0.7s;
+    }
+    #clear:focus {
+      outline-color: transparent;
+      outline-style: solid;
+      box-shadow: 0 0 0 4px #8ea701;
+      transition: 0.7s;
+    }
+  }
+  .outcome {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+
+    .container {
+      padding: 10px;
+      img {
+        width: 50px;
+        height: 50px;
+      }
+      a:link,
+      a:visited {
+        background-color: #f44336;
+        color: white;
+        padding: 14px 25px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        border: none;
+        border-radius: 10px;
+      }
+
+      a:hover,
+      a:active {
+        background-color: red;
+      }
+
+      .buttonContainer {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        width: 100px;
+
+        button {
+          margin-bottom: 5px;
+          background-color: #4d8a56;
+          color: #fff;
+          border: none;
+          border-radius: 10px;
+          padding: 15px;
+          min-height: 30px;
+          min-width: 120px;
+        }
+        button:hover {
+          background-color: #993864;
+          transition: 0.7s;
+        }
+        button:focus {
+          outline-color: transparent;
+          outline-style: solid;
+          box-shadow: 0 0 0 4px #8ea701;
+          transition: 0.7s;
+        }
+      }
+    }
+  }
+}
